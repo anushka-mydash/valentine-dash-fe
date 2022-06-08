@@ -57,6 +57,7 @@
 .loveMeter__container {
   width: 41%;
   position: relative;
+  margin-right: 20px;
 }
 
 .indicator {
@@ -75,54 +76,6 @@
 
 .gauge__meter img {
   width: 100%;
-}
-
-.legends__container {
-  padding: 10px;
-  margin: 0 10px 0 20px;
-  width: 25%;
-}
-
-.legend__item {
-  margin: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-.col__box1 {
-  background: #ffd0e4;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  margin-right: 10px;
-}
-
-.col__box2 {
-  background: #f67aac;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  margin-right: 10px;
-}
-
-.col__box3 {
-  background: #d81071;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  margin-right: 10px;
-}
-
-.col__box4 {
-  background: #ac0857;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  margin-right: 10px;
-}
-
-.legend__label {
-  font-size: 14px;
 }
 
 .c-chart-gauge__needle-base,

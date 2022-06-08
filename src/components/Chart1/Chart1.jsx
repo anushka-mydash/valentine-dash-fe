@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { GaugeChart } from './GuageChart'
 import './Chart1.scss'
+import Legends from '../Legends/Legends';
 
 export default function Chart() {
     const [numOfCrushes, setNumOfCrushes] = useState(0);
@@ -8,6 +9,14 @@ export default function Chart() {
     const randomCrushes = () => {
         return Math.floor((Math.random() * 50) + 1);
     }
+    const legendsData =
+        [
+            { value: "Less than 10", color: "#ffd0e4" },
+            { value: "10-20", color: "#f67aac" },
+            { value: "20-30", color: "#d81071" },
+            { value: "30-40", color: "#ac0857" },
+            { value: "40 and more", color: "#ac0857" },
+        ];
 
     useEffect(() => {
         const num = randomCrushes();
@@ -30,29 +39,11 @@ export default function Chart() {
                         numOfCrushes={numOfCrushes}
                     />
                 </div>
-                <div className="legends__container">
-                    <div className="legend__item">
-                        <div className="col__box1"></div>
-                        <div className="legend__label">Less than 10</div>
-                    </div>
-                    <div className="legend__item">
-                        <div className="col__box2"></div>
-                        <div className="legend__label">10-20</div>
-                    </div>
-                    <div className="legend__item">
-                        <div className="col__box3"></div>
-                        <div className="legend__label">20-30</div>
-                    </div>
-                    <div className="legend__item">
-                        <div className="col__box4"></div>
-                        <div className="legend__label">30-40</div>
-                    </div>
-                    <div className="legend__item">
-                        <div className="col__box4"></div>
-                        <div className="legend__label">40 and more</div>
-                    </div>
+                <div style={{ width: "25%" }}>
+                    <Legends legendsData={legendsData} />
                 </div>
             </div>
         </div>
+
     )
 }

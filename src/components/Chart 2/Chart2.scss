@@ -1,0 +1,32 @@
+.chart__container {
+  width: 50%;
+  // height: 35vh;
+  background: #eee;
+  padding: 10px 15px;
+  margin: 20px 0;
+  border-radius: 10px;
+  // background: url("../../assests/flowersBg.svg");
+  display: flex;
+  justify-content: space-between;
+
+  .versus__container,
+  .desirability__container {
+    width: 45%;
+    display: flex;
+
+    h3 {
+      text-align: center;
+    }
+
+    .legendsContainer {
+      width: 30%;
+      display: grid;
+      place-items: center;
+      margin-left: 10px;
+    }
+  }
+  .desirability__container {
+    width: 45%;
+    display: flex;
+  }
+}

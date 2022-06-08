@@ -1,0 +1,20 @@
+.legends__container {
+  width: 100%;
+}
+
+.legend__item {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.col__box {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.legend__label {
+  font-size: 14px;
+}
