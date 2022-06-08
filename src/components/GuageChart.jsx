@@ -155,7 +155,8 @@ export const GaugeChart = ({ numOfCrushes }) => {
             .range([0.56, 1]);
 
 
-        if (numOfCrushes < 10) needle.render(lessThanTenScale(numOfCrushes));
+        if (numOfCrushes < 10) 
+        needle.animateTo(lessThanTenScale(numOfCrushes));
         else if (numOfCrushes < 21 && numOfCrushes > 9) {
             needle.animateTo(between10and20(numOfCrushes));
         }
