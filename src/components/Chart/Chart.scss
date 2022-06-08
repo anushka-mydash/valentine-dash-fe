@@ -1,0 +1,131 @@
+// #FFD0E4
+// #F67AAC
+// #D81071
+// #AC0857
+
+.gauge__wrapper {
+  background: #eee;
+  width: 50%;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.gauge__heading {
+  text-align: center;
+}
+.gauge__container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.crushes__numberContainer {
+  position: relative;
+  width: 33%;
+}
+
+.crushes__numberContainer::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: url("../../assests/bg.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: contain;
+}
+
+.loveBg {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  flex: 0.3;
+}
+
+.crush__count {
+  font-size: 80px;
+  font-weight: 500;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  padding: 30px;
+}
+
+.loveMeter__container {
+  width: 41%;
+  position: relative;
+}
+
+.indicator {
+  position: absolute;
+  bottom: 0;
+  transform: translate(100%, 0%);
+}
+
+.indicator img {
+  width: 115px;
+}
+
+.gauge__meter svg {
+  transform: translate(0, 0);
+}
+
+.gauge__meter img {
+  width: 100%;
+}
+
+.legends__container {
+  padding: 10px;
+  margin: 0 10px 0 20px;
+  width: 25%;
+}
+
+.legend__item {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.col__box1 {
+  background: #ffd0e4;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.col__box2 {
+  background: #f67aac;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.col__box3 {
+  background: #d81071;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.col__box4 {
+  background: #ac0857;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.legend__label {
+  font-size: 14px;
+}
+
+.c-chart-gauge__needle-base,
+.c-chart-gauge__needle {
+  fill: #555555;
+}
