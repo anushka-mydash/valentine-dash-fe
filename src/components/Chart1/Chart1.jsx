@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { GaugeChart } from '../GuageChart'
-import './Chart.scss'
+import { GaugeChart } from './GuageChart'
+import './Chart1.scss'
 
 export default function Chart() {
     const [numOfCrushes, setNumOfCrushes] = useState(0);

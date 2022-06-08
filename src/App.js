@@ -1,4 +1,4 @@
-import Gauge from "./components/Chart/Chart";
+import Gauge from "./components/Chart1/Chart1";
 
 function App() {
   return (
