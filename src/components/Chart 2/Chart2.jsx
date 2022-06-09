@@ -35,7 +35,7 @@ export default function Chart2() {
                     <PieChart data={data1} />
                 </div>
                 <div className="legendsContainer">
-                    <TrafficLights />
+                    <TrafficLights percentage={data1[0].value} />
                 </div>
             </div>
         </div>

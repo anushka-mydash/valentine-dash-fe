@@ -56,12 +56,12 @@ export default function PieChart({ data }) {
             .attr("style", "font-weight:500")
             .attr("fill",
                 (d) => {
-                    console.log(d.data.color === "#ffd0e4")
                     return d.data.color === "#ffd0e4" ? "#ffd0e4" : "#eee"
                 }
             )
             .text(function (d) { return d.data.value + "%"; });
 
+        // eslint-disable-next-line
     }, [])
     return (
         <div className="pieChart">
